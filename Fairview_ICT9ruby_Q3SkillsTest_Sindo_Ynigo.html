@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("https://m.media-amazon.com/images/I/61vmomQmrhS._AC_SL1024_.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-info bg-opacity-75">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+        <img style= "width: 50px; height: 50;"
+        src="https://png.pngtree.com/png-clipart/20220515/original/pngtree-motor-cycle-logo-png-png-image_7718515.png" 
+        alt="https://png.pngtree.com/png-clipart/20220515/original/pngtree-motor-cycle-logo-png-png-image_7718515.png"></a>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Enroll</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+      </form>
+    
+    </div>
+    </div>
+    </nav>
+
+    <br>
+<div class="container">
+  
+<div class="row">
+
+    <div class="col-lg bg-info bg-opacity-75" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">
+      
+            <br><br><br>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/019/879/186/small/user-icon-on-transparent-background-free-png.png" 
+            style="width: 450px;">
+            <br><br>
+            <input type="file" class="form-control" id="num1">
+            <br>
+            <button onclick="message3()" class="bg-info text-center">Use Photo</button>
+            <br><br><br><br>
+     
+    </div>
+
+
+    <div class="col-lg bg-info bg-opacity-75" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+      
+        <h1 class="text-center">REGISTRATION</h1>
+        <p class="text-center">Welcome to Papsys' Motorcycle Taxi!</p>
+
+        <details ontoggle="message1()">
+        <summary class="text-center"><u>Instructions</u></summary>
+        <br>
+        <i id="message"></i>
+        </details>
+
+        <br>
+        <input type="text" class="form-control" id="num1" placeholder="Name:">
+        <br>
+        <input type="number" class="form-control" id="num2" placeholder="Age:">
+        <br>
+        <input type="number" class="form-control" id="num3" placeholder="Contact Number:">
+        <br>
+        <input type="text" class="form-control" id="num4" placeholder="Email:">
+        <br>
+        <input type="text" class="form-control" id="num5" placeholder="Enter Username:">
+        <br>
+        <input type="text" class="form-control" id="num6" placeholder="Enter Password:">
+        <br>
+
+        <button type="submit" class="btn btn-primary" onclick="message2()">Create Account</button>
+        <button type="submit" class="btn btn-light" onclick="window.location.reload()">Cancel</button>
+
+        </div>
+
+      </div>
+   </div> 
+        <script>
+                    function message1(){
+            document.getElementById("message").innerHTML = "Register your driver form by entering what is needed to be entered below."
+        }
+
+                    function message2(){
+            window.alert("Thank you for registering your account!")
+        }
+
+                    function message3(){
+            window.alert("File not available")
+        }
+        </script>
+  
+
+    
+
+</body>
+</html>
